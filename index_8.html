@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y tablas</title>
+
+    <!--Css-->
+    <style>
+        table, th, td {
+
+            border: 1px solid yellow;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <!--Tablas con estilos-->
+    <table style="width: 250px;">
+        <!--Agrupar elementos de cabecera-->
+
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>precio</th>
+            </tr>
+        </thead>
+
+        <!--Agrupar elementos pertenecientes al cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td>Bits</td>
+                <td>$50</td>
+            </tr>
+    
+            <tr>
+                <td>Sd</td>
+                <td>$250</td>
+            </tr>
+        </tbody>
+
+        <!--Pie de tabla-->
+        <tfoot>
+            <td></td>
+            <td>Total: $300</td>
+        </tfoot>
+
+    </table>
+
+
+    <!--Ul es lista no ordenada-->
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Thre</li>
+        <li>Four</li>    
+    </ul>
+
+    <!--ol es lista ordenada-->
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Thre</li>
+        <li>Four</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha ;">0</li>
+                <li style="list-style-type: lower-alpha ;">1</li>
+                <li style="list-style-type: lower-alpha ;">3</li>
+            </ol>
+        </li>    
+    </ol>
+
+    <!--ol es lista ordenada, para modificar el valor de lista usamos value-->
+    <ol>
+        <li value="50">One</li>
+        <li>Two</li>
+        <li>Thre</li>
+        <li>Four</li>    
+    </ol>
+
+
+    <form action="/formulario" method="get" >
+
+        <!--Tenemos dos metodos el get y el post, con el primero al enviar los datos estos quedan expuestos
+        en la barra de direccion, el metodo post los oculta.-->
+    
+        <label for="nombre">Nombre</label>
+        
+        <!--Diferentes tipos de interacciones con el input-->
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <br><br>
+        <input type="email" name="mail" id="email" placeholder="Mail">
+        <br><br>
+        <input type="password" name="pass" id="password" placeholder="Pasword">
+        <br><br>
+        <input type="submit" name="submit" id="submit" />
+        <br><br>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" >
+        <br><br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Comentarios"></textarea>
+        <br><br>
+        <button type="button"> Boton</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+    
+    </form>
+    <br>
+    <hr>
+    
+    <h1>Vamos a ver la etiqueta p</h1>
+    
+    <p>Aca se pouede escribir cualquier cosa, muy cualquiera</p>
+    <p>Agregamos mas textos y una etiqueta (hr) que nos dibuja una linea</p>
+    <hr>
+    <h2>Mas sobre p</h2>
+    <p>Aca hay mas texto en un parrafo</p>
+    <!--Esto es un comentario y solo el que accede al codigo lo puede ver :)--> 
+    <p>Ahora vamos a escribir <span style="color:aqua"> mas texto </span> y que vamos a seleccionar una parte <br> del mismo mediante una etiqueta 'span'</p> 
+    <p>Vamos a usar un Hipervinculo</p>
+    <a href="https://google.com">Ir a google</a>
+    <br>
+    <p>Vamos a hacer que el hipervinculo nos lleve a una nueva pestana en el navegador</p>
+    <a target="_blank" href="https://bing.com">Ir a bing</a>
+    <br>
+    <img src="img/13694.jpg" height="400" width="500" alt="Tech"/>
+    
+</body>
+</html>
